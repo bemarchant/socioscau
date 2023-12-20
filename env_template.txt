@@ -34,7 +34,7 @@ DB_PORT=5432
 
 # Hosts that are allowed to connect to this Django instance.
 # Leave it [] if you are working in development.
-ALLOWED_HOSTS=[]
+ALLOWED_HOSTS=*
 
 # Whether to compress static files offline. Haven't tested it to True locally so do it under your own risk.
 COMPRESS_OFFLINE=False
