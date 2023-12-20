@@ -11,8 +11,9 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         file_path = options["file_path"]
-        with open(file_path, "r") as csvfile:
+        with open(file_path, "r", encoding="utf-8") as csvfile:
             reader = csv.reader(csvfile, delimiter=";")
+            print(reader)
             counter = 0
             for row in reader:
                 if counter == 0:
